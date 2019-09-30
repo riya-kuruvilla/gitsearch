@@ -1,0 +1,22 @@
+.center{
+    margin-left: 366px;
+    margin-top: 37px;
+}
+input{
+    border-style: none;
+    border-bottom: ridge;
+    width:53%;
+}
+img{
+    width: 39%;
+    margin-left: 27%;
+}
+.header{
+    width: 39%;
+    margin-top: 28px;
+    text-align: center;
+    margin-left: 362px;
+}
+a{
+    color:blue;
+}

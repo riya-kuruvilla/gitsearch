@@ -1,0 +1,27 @@
+<div>
+  <div class="center">
+
+<!-- <div class="text"> -->
+    <input type="text" (keyup.enter)="pushData(search)" [(ngModel)]="search">
+  <!-- </div> -->
+    <!-- <h1> {{firstname}}</h1> -->
+    <p>{{search}}</p>
+    <button type="button" class="btn btn-primary" (click)="pushData(search)">Find Me</button>
+  </div>
+  <div class="header">
+    <div class="card-header bg-primary">
+      <p>{{tag}}</p>
+    </div>
+  </div>
+  <div *ngIf="isLoading">
+    <img src="https://thumbs.gfycat.com/WelldocumentedRevolvingBass-small.gif">
+  </div>
+    <!-- <img src="{{res}}" alt="Girl in a jacket"> -->
+    <img *ngIf="isImage" src={{obj.avatar_url}}>
+  
+    <div  class="header">
+        <div *ngIf="isImage" class="card-footer bg-primary">
+          <a   href={{obj.html_url}}>{{search}}</a>
+        </div>
+      </div>
+</div>
